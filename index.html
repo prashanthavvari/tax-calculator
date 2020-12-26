@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate your take home salary | Salary | Salary Assistant</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header><h1>Hi there!</h1></header>
+        <h3>Calculate your take home salary(Old regime)</h3>
+        <div class="form-section">
+            <form class="form" id="salary">
+                <h3>Salary Components</h3>
+                <div class="row">
+                    <label class="col-md-6" for="basic">Basic:</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="basic">
+                </div>
+                <div class="row">
+                    <label class="col-md-6" for="hra">HRA:</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="hra">
+                </div>
+                <div class="row">
+                    <label class="col-md-6" for="lta">LTA:</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="lta">
+                </div>
+                <div class="row">
+                    <label class="col-md-6" for="other_allowances">Other | Special Allowances</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="other_allowances">
+                </div>
+                <div class="row">
+                    <label class="col-md-6" for="salary_total">Total CTC</label>
+                    <input class="col-md-1" type="text" id="salary_total" disabled>
+                </div>
+            </form>
+            <hr/>
+            <h3>Investments</h3>
+            <form class="form" id="deductions">
+                <div class="row">
+                    <label class="col-md-6" for="mutual_funds">Mutual Funds | ELSS</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="mutual_funds">
+                </div>
+                <div class="row">
+                    <label class="col-md-6" for="homeloanprincipal">Home loan paid (principal)</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="home_loan_principal">
+                </div>
+                <div class="row">
+                    <label class="col-md-6" for="homeloaninterest">Home loan interest</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="home_loan_interest">
+                </div>
+                <div class="row">
+                    <label for="isPFincluded">
+                        Is PF included in CTC?
+                        <span class="help-text">Mostly your CTC includes PF if not uncheck this option to add PF</span>
+                    </label>
+                    <input type="checkbox" id="pf_checkbox">
+                </div>
+                <div class="row" id="pf">
+                    <label class="col-md-6" for="pf_employee">
+                        Provident Fund by Employee
+                    </label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="pf_employee">
+                </div>
+                <div class="row" id="pf">
+                    <label class="col-md-6" for="pf_emplyer">
+                        Provident Fund contribution by emplyee(your's)
+                    </label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="pf_employer">
+                </div>
+            </form>
+            <hr/>
+            <h3>Other Income</h3>
+            <form class="form" id="otherincome">
+                <div class="row">
+                    <label class="col-md-6" for="other_income">Other Income(donot include rent on home)</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="other_income">
+                </div>
+                <div class="row">
+                    <label class="col-md-6" for="income_from_houserent">Income from let out property</label>
+                    <input class="col-md-1" type="text" placeholder="0.0" id="income_from_houserent">
+                </div>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript" src="SalaryObject.js"></script>
+    <script type="text/javascript" src="BasicdeductionsObject.js"></script>
+    <script type="text/javascript" src="OtherIncome.js"></script>
+    <script type="text/javascript" src="FreeService.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</html>
